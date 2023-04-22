@@ -7,7 +7,7 @@ export const Main = () => {
     <div id="main" className="Main">
       <div className="Landing">
         <div className="Taxiimg">
-          <img src="../src/assets/Taxiimg.jpg" alt="" />
+          <img src="../public/static/Taxiimg.jpg" alt="" />
         </div>
         <div className="Book_the_ride">
           <span>Plan your trip now</span>

@@ -15,7 +15,7 @@ export const Navbar = () => {
   return (
     <div className="NavBar">
       <div className="logo">
-        <img src="../src/assets/logo.png" alt="logo" />
+        <img src="../public/static/logo.png" alt="logo" />
         <span>CallTheCab</span>
       </div>
       <div className="nav-items">

@@ -6,7 +6,7 @@ export const About = () => {
     <div id="about" className="Abount">
       <div className="About_our_company">
         <div className="TaxiImg">
-          <img src="../src/assets/taxi.gif" alt="" />
+          <img src="../public/static/taxi.gif" alt="" />
         </div>
         <div className="Description">
           <h2>About our Company</h2>
@@ -52,11 +52,10 @@ export const About = () => {
           </div>
           <div className="card">
             <p>
-              {`"`}The taxi was in great condition and made our trip even
-              better.Highly recommmend for booking the cabs from this website
+              {`"`}It was a great experience with CallTheCab service and the drivers were very polite and made a good trip
               {`"`}
             </p>
-            <span>Tanmay Tripathy</span>
+            <span>Abhishek Gupta</span>
           </div>
         </div>
       </div>
