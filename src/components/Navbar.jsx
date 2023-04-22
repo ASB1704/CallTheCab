@@ -3,7 +3,7 @@ import React from "react";
 import "../Styles/Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
-import logo from "../../public/static/logo.png"
+import logo from "/public/static/logo.png"
 export const Navbar = () => {
   const closenav = () => {
     let a = document.querySelector(".nav-items");
