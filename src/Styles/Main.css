@@ -1,0 +1,53 @@
+.Main {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding-right: 5rem;
+  align-items: center;
+  padding-top: 5rem;
+  background-size: fit;
+}
+.Main .Landing {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Main .Landing .Taxiimg {
+  width: 65%;
+  height: 100%;
+}
+.Main .Landing img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .Landing .Book_the_ride {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  height: 100%;
+  gap: 0.5rem;
+}
+.Main .Landing .Book_the_ride span:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.Main .Landing .Book_the_ride p {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+.Main .Landing .Book_the_ride .btn {
+  padding: 0.8rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.Main .Landing .Book_the_ride .btn button {
+  cursor: pointer;
+  padding: 0.8rem;
+  background-color: #010103;
+  color: #fff;
+}/*# sourceMappingURL=Main.css.map */
