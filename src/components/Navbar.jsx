@@ -3,6 +3,7 @@ import React from "react";
 import "../Styles/Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
+import logo from "../../public/static/logo.png"
 export const Navbar = () => {
   const closenav = () => {
     let a = document.querySelector(".nav-items");
@@ -15,7 +16,7 @@ export const Navbar = () => {
   return (
     <div className="NavBar">
       <div className="logo">
-        <img src="../public/static/logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
         <span>CallTheCab</span>
       </div>
       <div className="nav-items">
