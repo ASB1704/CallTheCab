@@ -1,11 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Form from "./Form";
 import "../Styles/Main.css";
 
 export const Main = () => {
   return (
-    <div className="Main">
+    <div id="main" className="Main">
       <div className="Landing">
         <div className="Taxiimg">
           <img src="../src/assets/Taxiimg.jpg" alt="" />
@@ -18,13 +17,19 @@ export const Main = () => {
             options and much more
           </span>
           <div className="btn">
-            <button>Book Now</button>
+            <button
+              onClick={() => {
+                var div = document.getElementById("myDiv");
+                div.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Book Now
+            </button>
             <button>Learn more </button>
           </div>
         </div>
         <div></div>
       </div>
-      <Form />
     </div>
   );
 };

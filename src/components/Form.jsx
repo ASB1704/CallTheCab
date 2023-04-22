@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import "../Styles/Form.css";
-import {FaTaxi} from 'react-icons/fa'
+import { FaTaxi } from "react-icons/fa";
 var Form = () => {
   const [pickupLocation, setPickupLocation] = useState("");
   const [dropOffLocation, setDropOffLocation] = useState("");
@@ -55,16 +55,17 @@ var Form = () => {
   };
 
   return (
-    <div>
+    <div className="Mainform" id="myDiv">
       {!submitted && (
-        <form onSubmit={handleSubmit} >
-            <div className="formcontrol">
-               <FaTaxi/>
-                <h4>Ride Now</h4>
-            </div>
+        <form onSubmit={handleSubmit}>
+          <div className="formcontrol ride-head">
+            <span>
+              {" "}
+              <FaTaxi />{" "}
+            </span>
+            <h2>Ride Now</h2>
+          </div>
           <div className="formcontrol">
-            <img src="../src/assets/location.png" alt="" />
-
             <input
               placeholder="Pickup Location"
               type="text"
@@ -79,7 +80,7 @@ var Form = () => {
             <p className="error">{errors.pickupLocation}</p>
           )}
           <div className="formcontrol">
-            <img src="../src/assets/destination.png" alt="" />
+            {/* <img src="../src/assets/destination.png" alt="" /> */}
             <input
               placeholder="drop-off-location"
               type="text"
@@ -93,6 +94,7 @@ var Form = () => {
           {errors.dropOffLocation && (
             <p className="error">{errors.dropOffLocation}</p>
           )}
+          <div className="formcontrol">
             <input
               type="time"
               id="time"
@@ -101,6 +103,8 @@ var Form = () => {
               onChange={(event) => setTime(event.target.value)}
               required
             />
+          </div>
+          <div className="formcontrol">
             <input
               type="date"
               id="date"
@@ -109,6 +113,7 @@ var Form = () => {
               onChange={(event) => setDate(event.target.value)}
               required
             />
+          </div>
           {errors.date && <p className="error">{errors.date}</p>}
 
           {errors.time && <p className="error">{errors.time}</p>}

@@ -1,0 +1,29 @@
+.scroll-to-top-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  background: #000;
+  right: 30px;
+  bottom: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transform: scale(0);
+  transition: all 0.2s linear;
+  z-index: 99999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.show {
+  transform: scale(1);
+}
+
+@media screen and (max-width: 425px) {
+  .scroll-to-top-button {
+    width: 50px;
+    height: 50px;
+  }
+}
