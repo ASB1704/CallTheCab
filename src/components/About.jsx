@@ -1,12 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import "../Styles/About.css";
+import Taxi from "../assets/taxi.gif"
+
 export const About = () => {
   return (
     <div id="about" className="Abount">
       <div className="About_our_company">
         <div className="TaxiImg">
-          <img src="../public/static/taxi.gif" alt="" />
+          <img src={Taxi} alt="" />
         </div>
         <div className="Description">
           <h2>About our Company</h2>
